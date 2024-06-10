@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1px 5px;
+  background-color: whitesmoke;
+}
+
+.first-section {
+  margin: 0 auto;
+  text-align: right;
+  background: #52646e;
+  width: 600px;
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.color{
+  background-color: white;
+  text-align: right;
+  width: 600px;
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+ 
+} 
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-top: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  --background: black;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #42c0f3;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #42c0f3;
+}
+
+.calc-zone {
+  padding-top: 100px;
+  font-size: 40px;
+  color: white;
+}
+
+.calc-zone2{
+  padding-top: 100px;
+  font-size: 40px;
+  color: black;
+}
+
+.calc-history {
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.calc-history2 {
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.one-number-line {
+  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.btn {
+  justify-content: center;
+  margin: auto;
+  margin: 0 20px;
+  text-align: center;
+  width: 15%;
+  font-size: 2em;
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-weight: 200;
+}
+
+.btn2 {
+  justify-content: center;
+  margin: auto;
+  margin: 0 20px;
+  text-align: center;
+  width: 15%;
+  font-size: 2em;
+  background-color: transparent;
+  color: black;
+  border-radius: 50px;
+  border: none;
+  font-weight: 200;
+}
+
+i {
+  font-size: 0.8em;
+}
